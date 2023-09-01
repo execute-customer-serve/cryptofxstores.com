@@ -1,0 +1,162 @@
+body{
+  background: #4f5b70;
+  font-family: sans-serif;
+}
+.content{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.text{
+  color: white;
+  margin-bottom: 25px;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.loading{
+  width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading, .line-box{
+  padding: 2px;
+  width: 40%;
+  height: 20px;
+  border: 2px solid #267591;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+.loading, .line-box, .line{
+  height: 20px;
+  border-radius: 20px;
+  background: #67d295;
+  animation: loading 5s infinite cubic-bezier(0,0,0,0);
+  
+}
+@keyframes loading{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 60%;
+  }
+}
+
+img{
+  width: 300px;
+  margin: 20px;
+  border-bottom-right-radius: 30px;
+}
+
+.top{
+  background-color: #0A111B;
+  width: 100%;
+}
+.post{
+  display: flex;
+  
+}
+.post img{
+  width: 300px;
+  border-radius: 10px;
+  margin-right: 300px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.post h2{
+  align-items: center;
+  justify-content: end;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-left: 70px;
+}
+.post h2 a{
+  text-decoration: none;
+  color: white;
+  word-wrap: none;
+  white-space: nowrap;
+}
+.badge img{
+  width: 60px; 
+  height: 50px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.post h2 a:hover{
+  color: rgb(101, 85, 85);
+  text-decoration: underline;
+}
+
+.linkup p{
+  font-size: 18px;
+}
+
+
+
+        .sitenavigation{
+          margin-left: 20px;
+    }
+    #foot{
+      padding: 10px;
+      margin-left: 20px;
+      margin-right: 20px;
+      color: gray;
+      font-weight: 900;
+    }
+  .login a{
+    text-decoration: none;
+    margin-left: 6px;
+    cursor: pointer;
+
+  }
+
+    .opt{
+      margin-left: 20%;
+    }
+    .Social_link{
+  display: flex;
+  justify-content: end;
+  padding-top: 20px;
+  margin-top: 40px;
+}
+.Social_link li {
+  list-style: none;
+}
+.Social_link li a img {
+  width: 40px;
+  display: flex;
+  background-color: #4d6194;
+  flex-direction: column;
+  margin-right: 40px;
+  
+  
+}
+.facebook li a img, .instagram li a img, .cryptofxstores li a img{
+  width: 90px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.facebook li p, .instagram li p, .cryptofxstores li p:hover{
+  color: navy;
+}
+@media (max-width:700px) {
+  .content{
+    margin: auto;
+    width: 99%;
+    margin-left: 0%;
+  }
+  .facebook li a img, .instagram li a img, .cryptofxstores li a img{
+    margin-right: 20px;
+  }
+  
+}
+

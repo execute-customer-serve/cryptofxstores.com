@@ -1,0 +1,335 @@
+body {
+  font-family: arial, san serif;
+  overflow-x: hidden;
+  scrollbar-arrow-color: #999 #fff;
+}
+
+/* NAVIGATION STYLES */
+nav {
+  display: flex;
+  position: fixed;
+  padding: 10px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #0C1A32;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  padding: 5px;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.nav-links ul {
+  margin-left: 90%;
+  display: flex;
+  list-style-type: none;
+  padding: 5px;
+}
+
+.nav-links ul li {
+  padding: 5px;
+  margin-right: 20px;
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+  white-space: nowrap;
+  padding-bottom: 5px;
+}
+
+.nav-links ul li a:hover {
+  color: orangered;
+}
+.nav-links ul li a{
+  color: white;
+  background-color: transparent;
+}
+
+.download-cv {
+  margin-top: -3px;
+  background-color: transparent;
+  border: 3px solid orangered;
+  border-radius: 20px;
+  transition: all 0.3s linear;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+}
+
+.download-cv:hover {
+  background-color: orangered;
+}
+
+.download-cv span:hover {
+  color: white;
+  transition: all 0.3s linear;
+}
+
+.menu {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.active {
+  color: orangered;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 1041px) {
+  nav {
+    display: flex;
+    position: fixed;
+    padding: 3px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #0C1A32;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .logo img {
+    height: 26px;
+  }
+
+  .menu {
+    display: block;
+    cursor: pointer;
+    right: 20px;
+    position: relative;
+  }
+
+  .mobile-menu {
+    display: none;
+    z-index: 2;
+    height: auto;
+    position: absolute;
+    text-align: left;
+    margin-top: 2.95rem;
+  }
+
+  .mobile-menu ul {
+    margin-top: 20px;
+  }
+
+  .mobile-menu li {
+    /* font-weight: 600; */
+    display: block;
+    list-style: none;
+    width: auto;
+    padding: 5px;
+  }
+
+  .download-cv a {
+    color: white;
+  }
+
+  .download-cv {
+    width: 170px !important;
+    margin-top: 20px;
+    padding: 7px !important;
+    background-color: orangered;
+    border-radius: 40px;
+    text-align: center;
+  }
+}
+
+.reward{
+  width: 100%;
+}
+.top{
+  background-color: #0A111B;
+  width: auto;
+}
+.post{
+  width: 480px;
+  
+  
+}
+.post img{
+  width: 300px;
+  border-radius: 10px;
+  margin-right: 300px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.post h2{
+  align-items: center;
+  justify-content: end;
+  flex-direction: row;
+  margin-top: 40px;
+  
+  padding-left: 0px;
+}
+.post h2 a{
+  text-decoration: none;
+  color: white;
+  white-space: nowrap;
+  padding-left: 0px;
+}
+
+.post h2 a:hover{
+  color: rgb(101, 85, 85);
+  text-decoration: underline;
+  padding-left: 0px;
+}
+.display {
+  display: flex;
+  padding-left: 0px;
+
+}
+.display  a{ 
+  list-style: none;
+  font-size: 14px;
+}
+.rewards{
+  background-color: #72767b;
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.rewards h2{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.rewards p{
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: large;
+}
+.claim a{
+  font-weight: 900;
+  text-decoration: none;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.claim a:hover{
+  color: red;
+  text-decoration: underline;
+}
+.rewards img{
+  width: 100px;
+  border-radius: 50px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.gifts{
+  display: flex;
+  align-content: center;
+  margin-left: 200px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.gifts div img{
+  width: 40%;
+}
+.claimgift img{
+  width: 40%;
+  display: block;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.hurray{
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #4d6194;
+}
+.margindown button{
+  width: 140px;
+  height: 50px;
+  border-radius: 10px;
+  margin-left: 45%;
+}
+.margindown button a:hover{
+  color: red;
+}
+.margindown button a{
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: larger;
+  white-space: nowrap;
+}
+.margindown p{
+  color: white;
+}
+.Social_link{
+  background-color: white;
+  display: flex;
+  justify-content: end;
+  padding-top: 20px;
+}
+.Social_link li {
+  list-style: none;
+}
+.Social_link li a img {
+  width: 20px;
+  display: flex;
+  background-color: #4d6194;
+  flex-direction: column;
+  margin-right: 10px;
+  
+  
+}
+.facebook li a img, .instagram li a img, .cryptofxstores li a img{
+  width: 90px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 2px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.facebook li p, .instagram li p, .cryptofxstores li p:hover{
+  color: navy;
+}
+@media (max-width:600px) {
+  
+  .reward{
+    width: 90%;
+    margin: auto;
+  }
+  .links img{
+    width: 224px;
+  }
+  .rewards h2{
+    font-size: 16px;
+  }
+  .rewards p{
+    font-size: 14px;
+  }
+  .hurray p{
+    font-size: 14px;
+  }
+  .margindown button{
+    margin-left: 35%;
+  }
+}
+.left_hand{
+  display: flex;
+} 
+body{
+  background-image: url(images/congratulations.jpeg);
+}
